@@ -6,10 +6,10 @@ Website for Deshmukh Civil Construction, a Nagpur-based civil contractor with 25
 
 ## Features
 
-- Responsive website with services, portfolio, why-choose-us and client reviews sections
-- "Request a Free Estimate" form: Rvery enquiry is saved to MongoDB and emailed to the owner instantly
-- Client feedback form: submissions are stored as pending and appear on the site only after the owner approves them
-- Mobile-friendly navigation, call and WhatsApp buttons
+- Responsive website with services, portfolio, why-choose-us and client reviews sections.
+- "Request a Free Estimate" form: Rvery enquiry is saved to MongoDB and emailed to the owner instantly.
+- Client feedback form: submissions are stored as pending and appear on the site only after the owner approves them.
+- Mobile-friendly navigation, call and WhatsApp buttons.
 
 ## Tech Stack
 
@@ -51,4 +51,4 @@ Set these in Netlify (Site configuration → Environment variables). Never commi
 
 ## Notes
 
-Built with the help of AI tools. I customised the design and content, and set up the database, email notifications and deployment.
+Built with the help of AI tools. I customised the design and content and set up the database, email notifications and deployment.
