@@ -2,7 +2,7 @@
 
 Website for Deshmukh Civil Construction, a Nagpur-based civil contractor with 25+ years of experience in house construction, renovation, repair and interior finishing.
 
-**Live site:** https://deshmukhcivilconstruction.netlify.app
+👉 **[Explore the live website](https://deshmukhcivilconstruction.netlify.app)**
 
 ## Features
 
