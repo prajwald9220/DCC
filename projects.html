@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Deshmukh Civil Construction</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- SVG SPRITE -->
+    <svg style="display:none" aria-hidden="true">
+        <symbol id="i-house" viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M9.5 21v-6h5v6"/></symbol>
+        <symbol id="i-wa" viewBox="0 0 32 32"><path d="M16.02 3.2A12.7 12.7 0 0 0 5.3 22.5L3.7 28.3l5.9-1.55A12.7 12.7 0 1 0 16 3.2zm0 2.3a10.4 10.4 0 1 1-5.3 19.3l-.35-.2-3.5.92.93-3.42-.22-.36A10.4 10.4 0 0 1 16 5.5zm-4.6 5c-.23 0-.6.08-.92.42-.32.34-1.2 1.17-1.2 2.85s1.23 3.3 1.4 3.54c.17.23 2.38 3.78 5.9 5.15 2.92 1.14 3.52.92 4.15.86.63-.06 2.05-.83 2.34-1.64.29-.8.29-1.5.2-1.64-.08-.14-.31-.23-.65-.4-.34-.17-2-1-2.31-1.1-.31-.12-.54-.17-.77.17-.23.34-.88 1.1-1.08 1.32-.2.23-.4.26-.74.09-.34-.17-1.44-.53-2.74-1.69-1.01-.9-1.7-2.02-1.9-2.36-.2-.34-.02-.52.15-.69.16-.15.34-.4.51-.6.17-.2.23-.34.34-.57.12-.23.06-.43-.03-.6-.08-.17-.76-1.87-1.05-2.56-.26-.66-.53-.58-.73-.59z"/></symbol>
+        <symbol id="i-zoom" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M11 8v6M8 11h6M16.5 16.5 21 21"/></symbol>
+        <symbol id="i-close" viewBox="0 0 24 24"><path d="M5 5 19 19M19 5 5 19"/></symbol>
+        <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+        <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.5 3h3l1.6 4-2 1.4a12 12 0 0 0 5.5 5.5l1.4-2 4 1.6v3A2.5 2.5 0 0 1 17.5 19 14.5 14.5 0 0 1 4.5 6 2.5 2.5 0 0 1 6.5 3z"/></symbol>
+    </svg>
+
+    <!-- ============ NAV ============ -->
+    <header class="nav" id="nav">
+        <div class="wrap navbar">
+            <div style="display:flex; align-items:center; gap:.6rem;">
+                <!-- Back Button -->
+                <a href="index.html#what-we-do" class="back-btn" aria-label="Go back to home">
+                    <svg viewBox="0 0 24 24"><path d="M15 5 8 12l7 7"/></svg>
+                </a>
+                <!-- Brand -->
+                <a href="index.html" class="brand" aria-label="Deshmukh Civil Construction home">
+                    <span class="brand-mark"><img src="/images/logo.jpeg" alt="Deshmukh Civil Construction Logo" style="height: 60px; width:auto; display:block;"></span>
+                    <span class="brand-txt"><strong>Deshmukh Civil</strong><span>Construction · Nagpur</span></span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="sec sec-light" id="projects" style="padding-top:120px;">
+        <div class="wrap">
+            <div class="sec-head" style="max-width:760px">
+                <div class="kicker reveal">Completed Projects</div>
+                <h2 class="reveal" style="--d:.06s">Homes we have built across Nagpur</h2>
+                <p class="reveal" style="--d:.12s">A selection of residential construction, renovation and finishing work delivered in Nagpur and nearby areas. Tap any project to view it larger.</p>
+            </div>
+            <div class="filters reveal" id="filters">
+                <button class="on" data-filter="all">All Projects</button>
+                <button data-filter="new">New Construction</button>
+                <button data-filter="renovation">Renovation &amp; Repair</button>
+                <button data-filter="interior">Interiors &amp; Finishing</button>
+            </div>
+            <div class="proj-grid" id="projGrid">
+                <!-- Project 1 -->
+                <div class="proj" data-category="new">
+                    <div class="proj-img">
+                        <img src="images/project-1.jpeg" alt="3BHK Residential Bungalow">
+                        <div class="proj-zoom"><svg viewBox="0 0 24 24"><use href="#i-zoom"/></svg></div>
+                    </div>
+                    <div class="proj-body">
+                        <div class="loc"><svg viewBox="0 0 24 24"><use href="#i-pin"/></svg> Dharamteel, Nagpur</div>
+                        <h3>3BHK Residential Bungalow</h3>
+                        <p>Ground floor 3BHK bungalow with granite flooring, POP ceiling and complete exterior texture paint.</p>
+                        <span class="proj-type">New Construction</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="proj" data-category="new">
+                    <div class="proj-img">
+                        <img src="images/project-2.png" alt="2BHK G+1 Family House">
+                        <div class="proj-zoom"><svg viewBox="0 0 24 24"><use href="#i-zoom"/></svg></div>
+                    </div>
+                    <div class="proj-body">
+                        <div class="loc"><svg viewBox="0 0 24 24"><use href="#i-pin"/></svg> Manish Nagar, Nagpur</div>
+                        <h3>2BHK G+1 Family House</h3>
+                        <p>Affordable 2BHK with rental unit above. RCC slab, concealed wiring and modular kitchen delivered in 7 months.</p>
+                        <span class="proj-type">New Construction</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="proj" data-category="new">
+                    <div class="proj-img">
+                        <img src="images/project-3.png" alt="Luxury 4BHK Residence">
+                        <div class="proj-zoom"><svg viewBox="0 0 24 24"><use href="#i-zoom"/></svg></div>
+                    </div>
+                    <div class="proj-body">
+                        <div class="loc"><svg viewBox="0 0 24 24"><use href="#i-pin"/></svg> Nagpur</div>
+                        <h3>Luxury 4BHK Residence</h3>
+                        <p>Premium build with high-end materials and elegant design.</p>
+                        <span class="proj-type">Premium Build</span>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="proj" data-category="renovation">
+                    <div class="proj-img">
+                        <img src="images/project-4.png" alt="Complete House Renovation">
+                        <div class="proj-zoom"><svg viewBox="0 0 24 24"><use href="#i-zoom"/></svg></div>
+                    </div>
+                    <div class="proj-body">
+                        <div class="loc"><svg viewBox="0 0 24 24"><use href="#i-pin"/></svg> Nagpur</div>
+                        <h3>Complete House Renovation</h3>
+                        <p>Full renovation including interiors, flooring and electrical.</p>
+                        <span class="proj-type">Renovation</span>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="proj" data-category="renovation">
+                    <div class="proj-img">
+                        <img src="images/project-5.png" alt="Bathroom & Kitchen Remodel">
+                        <div class="proj-zoom"><svg viewBox="0 0 24 24"><use href="#i-zoom"/></svg></div>
+                    </div>
+                    <div class="proj-body">
+                        <div class="loc"><svg viewBox="0 0 24 24"><use href="#i-pin"/></svg> Nagpur</div>
+                        <h3>Bathroom &amp; Kitchen Remodel</h3>
+                        <p>Modern tiles, plumbing and custom cabinetry installation.</p>
+                        <span class="proj-type">Renovation</span>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="proj" data-category="interior">
+                    <div class="proj-img">
+                        <img src="images/project-6.png" alt="Interior & False Ceiling Work">
+                        <div class="proj-zoom"><svg viewBox="0 0 24 24"><use href="#i-zoom"/></svg></div>
+                    </div>
+                    <div class="proj-body">
+                        <div class="loc"><svg viewBox="0 0 24 24"><use href="#i-pin"/></svg> Nagpur</div>
+                        <h3>Interior &amp; False Ceiling Work</h3>
+                        <p>POP design, lighting and interior finishing for modern homes.</p>
+                        <span class="proj-type">Interior</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ LIGHTBOX ============ -->
+    <div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Project image viewer">
+        <figure>
+            <button class="lb-close" id="lbClose" aria-label="Close">
+            <svg viewBox="0 0 24 24"><use href="#i-close"/></svg>
+        </button>
+            <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">
+            <svg viewBox="0 0 24 24"><path d="M15 5 8 12l7 7"/></svg>
+        </button>
+            <button class="lb-nav lb-next" id="lbNext" aria-label="Next">
+            <svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></svg>
+        </button>
+            <img id="lbImg" src="" alt="">
+            <figcaption id="lbCap"></figcaption>
+        </figure>
+    </div>
+
+    <!-- ============ FOOTER ============ -->
+    <footer>
+        <div class="wrap">
+            <div class="f-grid">
+                <div class="f-about">
+                    <a href="index.html" class="brand">
+                        <span class="brand-txt"><strong>Deshmukh Civil</strong><span>Construction · Nagpur</span></span>
+                    </a>
+                    <p>Complete residential house and building construction, renovation and repair services in Nagpur and nearby areas. One contractor, complete supervision, honest work.</p>
+                    <div class="socials">
+                        <a href="https://www.instagram.com/deshmukh_civil_construction" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="3.8"/><circle cx="17" cy="7" r="1"/></svg></a>
+                        <a href="#" aria-label="Facebook" onclick="return false"><svg viewBox="0 0 24 24"><path d="M14 8.5V7a1.5 1.5 0 0 1 1.5-1.5H17V3h-2.5A3.5 3.5 0 0 0 11 6.5v2H9V12h2v9h3v-9h2.3l.7-3.5z"/></svg></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul class="f-links">
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#services">Our Services</a></li>
+                        <li><a href="index.html#what-we-do">Portfolio</a></li>
+                        <li><a href="index.html#why">Why Choose Us</a></li>
+                        <li><a href="index.html#reviews">Client Reviews</a></li>
+                        <li><a href="index.html#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Services</h4>
+                    <ul class="f-links">
+                        <li><a href="index.html#services">House &amp; Building Construction</a></li>
+                        <li><a href="index.html#services">1BHK to 4BHK Homes</a></li>
+                        <li><a href="index.html#services">Renovation &amp; Repair</a></li>
+                        <li><a href="index.html#services">Electrical Work</a></li>
+                        <li><a href="index.html#services">Tiles &amp; Flooring</a></li>
+                        <li><a href="index.html#services">Painting &amp; POP</a></li>
+                        <li><a href="index.html#services">Furniture &amp; Carpentry</a></li>
+                        <li><a href="index.html#services">Water Supply &amp; Plumbing</a></li>
+                        <li><a href="index.html#services">Interior Finishing</a></li>
+                        <li><a href="index.html#services">General Civil Works</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Get in Touch</h4>
+                    <ul class="f-links">
+                        <li><a href="#" onclick="return false">All Days : 9:00 AM – 7:00 PM</a></li>
+                    </ul>
+                    <a href="tel:+918767114758" class="btn btn-primary btn-sm" style="margin-top:1rem">
+                        <svg viewBox="0 0 24 24" stroke="currentColor" style="width:17px;height:17px;fill:none"><use href="#i-phone"/></svg> Call Now
+                    </a>
+                    <ul class="f-links" style="margin-top:1rem">
+                        <li><a href="mailto:deshmukhcivilconstruction1111@gmail.com">deshmukhcivilconstruction1111@gmail.com</a></li>
+                    </ul>
+                    <a href="https://wa.me/918767114758?text=Hello%20Deshmukh%20Civil%20Construction" target="_blank" rel="noopener" class="btn btn-primary btn-sm" style="margin-top:1rem">
+                        <svg viewBox="0 0 32 32" style="fill:currentColor;stroke:none"><use href="#i-wa"/></svg> Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="f-bottom">
+                <span>© <span id="yr"></span> Deshmukh Civil Construction. All rights reserved.</span>
+                <span>House Construction · Renovation · Repair · Interior Finishing</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

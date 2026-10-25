@@ -1,0 +1,14 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+  command = "npm install"
+
+[[redirects]]
+  from = "/api/feedback"
+  to = "/.netlify/functions/feedback"
+  status = 200
+
+[[redirects]]
+  from = "/api/contact"
+  to = "/.netlify/functions/contact"
+  status = 200
